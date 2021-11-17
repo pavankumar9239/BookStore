@@ -27,10 +27,10 @@ namespace BookStore.Repository
         {
             return new List<BookModel>()
             {   
-                new BookModel(){Id=1, Title="MVC", AuthorName="APK"},
-                new BookModel(){Id=2, Title=".Net", AuthorName="Megha"},
-                new BookModel(){Id=3, Title="Java", AuthorName="Manasa"},
-                new BookModel(){Id=4, Title="PHP", AuthorName="Siddu"},
+                new BookModel(){Id=1, Title="MVC", AuthorName="APK", Description ="This is about book", Category="Programming", Language="English", TotalPages=1067 },
+                new BookModel(){Id=2, Title=".Net", AuthorName="Megha", Description ="This is about book" , Category="Framework", Language="Chinese", TotalPages=967},
+                new BookModel(){Id=3, Title="Java", AuthorName="Manasa", Description ="This is about book", Category="Concept", Language="English", TotalPages=1076},
+                new BookModel(){Id=4, Title="PHP", AuthorName="Siddu", Description ="This is about book", Category="Programming", Language="English", TotalPages=1156},
             };
         }
     }

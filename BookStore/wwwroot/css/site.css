@@ -1,9 +1,42 @@
 ﻿body {
+}
+
+.jumbotron{
+    background:none;
+}
+
+box-shadow{
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.05);
+}
+
+#footer{
+    height:10px;
+}
+
+html{
+    position:relative;
+    min-height:100%;
+}
+
+body{
+    margin-bottom:60px;
 
 }
 
-.container{
-    height:20px;
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    white-space:nowrap;
+    line-height:60px;
 }
 
+.membership-img{
+    width:80%
+}
+
+.card{
+    top:10px;
+    bottom:inherit;
+}
 
