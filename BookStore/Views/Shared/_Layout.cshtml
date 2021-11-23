@@ -12,7 +12,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-expand-lg border-bottom box-shadow mb-3">
             <div class="container" style="color:gray">
                 <a class="navbar-brand" href="~/Home/Index">
-                    <img src="~/images/logo1.jpg" width="30" height="30" />
+                    <img src="~/images/logo1.jpg"  width="30" height="30" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,16 @@
                     </ul>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a href="~/Home/Index" class="nav-link text-dark">Home</a>
+                            <a asp-controller="Home" asp-action="Index" class="nav-link text-dark">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="~/Home/AboutUs" class="nav-link text-dark">About</a>
+                            <a asp-controller="Home" asp-action="AboutUs" class="nav-link text-dark">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="~/Home/ContactUs" class="nav-link text-dark">Contact</a>
+                            <a  asp-controller="Home" asp-action="ContactUS" class="nav-link text-dark">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="~/Book/GetAllBooks" class="nav-link text-dark">GetAllBooks</a>
+                            <a  asp-controller="Book" asp-action="GetAllBooks" class="nav-link text-dark">GetAllBooks</a>
                         </li>
                     </ul>
                     @*<form class="form-inline my-2 my-lg-0">

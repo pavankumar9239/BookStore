@@ -1,5 +1,4 @@
-﻿@using BookStore.Models
-@model IEnumerable<BookModel>
+﻿@model IEnumerable<BookModel>
 
 
 
@@ -10,7 +9,7 @@
         {
 
 
-            <div class="col-md-4">
+            <div class="col-md-4" id="similarbooks">
                 <div class="card md-4 shadow-sm">
                     <svg class="bd-paceholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/TR/SVG" preserveAspectRatio="xMidYMid meet">
                         <div class="card-body">
@@ -18,7 +17,8 @@
                             <p class="card-text">@b.Description</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a class="btn btn-sm btn-outline-secondary" href ="/book/getbookbyid/@b.Id">View Details</a>
+                                    <a asp-controller="book" asp-action="getbookbyid" asp-route-id="@b.Id"  class="btn btn-sm btn-outline-secondary">View Details</a>
+                                    @*href ="/book/getbookbyid/b.Id"*@
                                 </div>
                                 <small case="text-muted">@b.AuthorName</small>
                             </div>
